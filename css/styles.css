@@ -1,0 +1,115 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  color: black; }
+
+body {
+  padding-top: 56px;
+  background-color: #e0e0e0;
+  font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif; }
+
+.wrapper-dark {
+  background-color: #ccc; }
+
+.wrapper-light {
+  background: white; }
+
+.jumbotron {
+  background-image: url("../img/jumbo.png");
+  height: 450px;
+  background-repeat: repeat;
+  background-position: center 60%;
+  margin-bottom: 0; }
+  .jumbotron h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #ccc; }
+
+.section-title {
+  padding-top: 25px;
+  font-family: 'Raleway', sans-serif; }
+  .section-title > .fas::after {
+    content: "";
+    padding-right: 0.25em; }
+  .section-title + p {
+    text-align: center; }
+  .section-title::after {
+    content: "";
+    display: block;
+    margin: 30px auto;
+    background-color: #ccc;
+    height: 1px;
+    width: 30px; }
+
+#profile {
+  max-width: 540px;
+  margin: 0 auto;
+  font-size: 1.2rem; }
+
+.container {
+  padding-top: 56px;
+  padding-bottom: 56px; }
+
+.work {
+  height: 250px;
+  margin: 15px 5px;
+  border-radius: 10px;
+  border: 1px solid black;
+  background-color: white;
+  filter: drop-shadow(0 0 0.75em rgba(0, 0, 0, 0.3)); }
+  .work > h3 {
+    margin: 5px;
+    font-size: 1.5rem;
+    font-family: "Sawarabi Gothic"; }
+  .work > p {
+    margin-left: 5px;
+    margin-right: 5px; }
+  .work .work-img {
+    overflow: hidden;
+    width: 100%;
+    height: 150px;
+    background-color: gray;
+    border-radius: 10px 10px 0 0; }
+    .work .work-img img {
+      width: 100%; }
+
+/* Modal window */
+.modal dl dt {
+  font-size: 1.1rem;
+  text-align: center; }
+
+.modal dl dd {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 1rem; }
+
+.modal dl .work-img-modal {
+  overflow: hidden;
+  max-height: 350px; }
+  .modal dl .work-img-modal img {
+    width: 100%; }
+
+.modal a::after {
+  content: " \f35d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900; }
+
+.mail-address {
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: #343a46; }
+  .mail-address > p {
+    font-size: 1.5rem;
+    color: #ffffff; }
+
+.sns-icons {
+  text-align: center;
+  font-size: 2.5rem; }
+
+footer {
+  text-align: center;
+  color: #ffffff;
+  background-color: #343a46;
+  height: 56px; }

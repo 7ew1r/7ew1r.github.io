@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Portfolio</title>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Sawarabi+Gothic" rel="stylesheet">
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+  <!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><a class="navbar-brand" href="#">Portfolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
+      aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
+        <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="#works">Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Jumbotron -->
+  <div class="jumbotron jumbotron-fluid ">
+    <div class="container">
+      <h1 class="display-1 text-center">Arito Shiihata's Portfolio</h1>
+    </div>
+  </div>
+
+  <!-- Profile -->
+  <div class="wrapper wrapper-dark">
+    <div id="profile" class="container">
+      <h1 class="section-title text-center"><i class="fas fa-user"></i>Profile</h1>
+      <dl class="row">
+        <dt class="col-sm-3 text-center">名前</dt>
+        <dd class="col-sm-9">椎畑　在東（Arito Shiihata）</dd>
+        <dt class="col-sm-3 text-center">年齢</dt>
+        <dd class="col-sm-9">25</dd>
+        <dt class="col-sm-3 text-center">好きな言語</dt>
+        <dd class="col-sm-9">Python, Ruby</dd>
+      </dl>
+      <p>
+        電気電子工学の大学にてロボット工学の研究室に所属し、プログラミングによるCG描画システムの開発を3年間行い、IT業界へ興味を持つ。<br>
+        新卒で大手通信会社に就職し、音声系のSEとして提案支援・プロジェクト管理業務に従事するも、
+        手を動かものづくりを行う仕事にチャレンジしたいと考え、キャリアチェンジを決意。<br>
+        現在は独学にてプログラミング学習を行いながら転職活動を行っている。
+      </p>
+    </div>
+  </div>
+
+  <!-- <hr> -->
+
+  <!-- Works -->
+  <div class="wrapper wrapper-light">
+    <div id="works" class="container">
+      <h1 class="section-title text-center"><i class="fas fa-wrench"></i>Works</h1>
+      <p>今まで携わった活動・制作物をまとめました。</p>
+
+      <!-- row1 -->
+      <div class="row">
+        <!-- ポートフォリオ -->
+        <div class="col-lg-4" data-toggle="collapse">
+          <div class="work" data-toggle="modal" data-target="#portfolio">
+            <div class="work-img">
+              <img src="img/portfolio.jpg" alt="portfolio">
+            </div>
+            <h3>ポートフォリオ</h3>
+            <p>自分自身のポートフォリオです</p>
+          </div>
+
+          <!-- モーダルダイアログ -->
+          <div class="modal fade" id="portfolio" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">ポートフォリオ</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <dl class="row">
+                    <div class="col-lg-12 work-img-modal">
+                      <img src="img/portfolio.jpg" alt="portfolio">
+                    </div>
+                    <dt class="col-lg-3 align-self-center">URL</dt>
+                    <dd class="col-lg-9">http://....</dd>
+                    <dt class="col-lg-3 align-self-center">ソースコード</dt>
+                    <dd class="col-lg-9">http://...</dd>
+                    <dt class="col-lg-3 align-self-center">説明</dt>
+                    <dd class="col-lg-9">自分自身のポートフォリオサイトです。<br>
+                      Bootstrap4のグリッドシステムを利用して作成しました。</dd>
+                  </dl>
+                </div>
+                <div class="modal-footer">
+                  <p>使用言語・技術：HTML5+CSS3, Bootstrap4</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- ポートフォリオ -->
+
+        <!-- Vue.js -->
+        <div class="col-lg-4">
+          <div class="work" data-toggle="modal" data-target="#vue-task-app">
+            <div class="work-img">
+              <img src="img/vue-task-app.jpg" alt="vue-task-app">
+            </div>
+            <h3>Vue Task App</h3>
+            <p>Vue.jsを用いたタスクアプリ</p>
+          </div>
+
+          <!-- モーダルダイアログ -->
+          <div class="modal fade" id="vue-task-app" tabindex="-1" role="dialog" aria-labelledby="modal"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Vue Task App</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <dl class="row">
+                    <div class="col-lg-12 work-img-modal">
+                      <img src="img/vue-task-app.jpg" alt="vue-task-app">
+                    </div>
+                    <dt class="col-lg-3 align-self-center">URL</dt>
+                    <dd class="col-lg-9"><a href="https://vue-task-app-bdc3b.firebaseapp.com/" target="
+                _blank" rel="noopener noreferrer">https://vue-task-app-bdc3b.firebaseapp.com/</a>
+                    </dd>
+                    <dt class="col-lg-3 align-self-center">ソースコード</dt>
+                    <dd class="col-lg-9"><a href="https://github.com/7ew1r/vue-task-app" target="
+                    _blank" rel="noopener noreferrer">https://github.com/7ew1r/vue-task-app</a>
+                    </dd>
+                    <dt class="col-lg-3 align-self-center">説明</dt>
+                    <dd class="col-lg-9">
+                      <p>フロントエンド技術の学習のため、Vue.jsを用いたタスクアプリを作成しました。</p>
+                      <p>データはローカルストレージに保存するため、外部に情報を保存しない単一の端末で使用することを想定しています。</p>
+                      <p>ホスティングサービスにはFirebaseを使用しました。</p>
+                    </dd>
+                  </dl>
+                </div>
+                <div class="modal-footer">
+                  <p>使用言語・技術：HTML5+CSS3, Vue.js</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div><!-- Vue.js -->
+
+        <!-- PCD Viewer -->
+        <div class="col-lg-4">
+          <div class="work" data-toggle="modal" data-target="#pcd-viewer">
+            <div class="work-img">
+              <img src="img/pcd-viewer.jpg" alt="pcd-viewer">
+            </div>
+            <h3>PCD Viewer</h3>
+            <p>PCD（Point Cloud Date）ファイルビューワー</p>
+          </div>
+        </div>
+
+        <!-- モーダルダイアログ -->
+        <div class="modal fade" id="pcd-viewer" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">PCD Viewer</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <dl class="row">
+                  <div class="col-lg-12 work-img-modal">
+                    <img src="img/pcd-viewer.jpg" alt="pcd-viewer">
+                  </div>
+                  <dt class="col-lg-3 align-self-center">URL</dt>
+                  <dd class="col-lg-9">—</dd>
+                  <dt class="col-lg-3 align-self-center">ソースコード</dt>
+                  <dd class="col-lg-9"><a href="https://github.com/7ew1r/pcd-viewer" target="
+                                    _blank" rel="noopener noreferrer">https://github.com/7ew1r/pcd-viewer</a></dd>
+                  <dt class="col-lg-3 align-self-center">説明</dt>
+                  <dd class="col-lg-9">
+                    <p>PCDファイル（3次元点群データ）を表示するツールです。</p>
+                    <p>ファイルを画面にD&Dすることで読み込み、点群データの閲覧を行う事が出来ます。</p>
+                    <p>大学での研究活動にて作成・使用していたものです。</p>
+                  </dd>
+                </dl>
+              </div>
+              <div class="modal-footer">
+                <p>使用言語・技術：C++, GLFW, Point Cloud Library</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div><!-- PCD Viewer -->
+
+    </div>
+  </div>
+
+  <!-- <hr> -->
+
+  <!-- Contact -->
+  <div class="wrapper">
+    <div id="contact" class="container">
+      <h1 class="section-title text-center"><i class="fas fa-envelope"></i>Contact</h1>
+      <div class="mail-address text-center">
+        <p>ar.shiihata@gmail.com</p>
+      </div>
+      <p class="sns-icons"><a href="https://github.com/7ew1r" target="_blank" rel=" noopener noreferrer"><i
+            class="fab fa-github"></i></a></p>
+    </div>
+  </div>
+
+  <footer>
+    <p><small>&copy; 2019 Arito Shiihata</small></p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
