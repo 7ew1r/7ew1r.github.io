@@ -21,68 +21,76 @@
 
 <body data-spy="scroll" data-target="#navbar">
   <!-- NavBar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><a class="navbar-brand" href="#">Portfolio</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top"><a class="navbar-brand" href="#"></a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar"
       aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
     <div class="collapse navbar-collapse" id="navbar">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item active"><a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a></li>
-        <li class="nav-item"><a class="nav-link" href="#profile">Profile</a></li>
+        <li class="nav-item"><a class="nav-link" href="#biography">Biography</a></li>
         <li class="nav-item"><a class="nav-link" href="#works">Works</a></li>
         <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
       </ul>
     </div>
-  </nav>
+  </nav><!-- NavBar -->
 
-  <!-- Jumbotron -->
-  <div class="jumbotron jumbotron-fluid ">
-    <div class="container">
-      <h1 class="display-1 text-center">Arito Shiihata's Portfolio</h1>
+  <!-- Biography -->
+  <div class="wrapper">
+    <div id="biography" class="container">
+      <h1 class="section-title text-center"><i class="fas fa-user"></i>Biography</h1>
+      <div class="row align-items-center">
+        <div class="col-lg-5">
+          <div class="biography-left">
+            <h3 class="section-sub-title"><i class="fas fa-address-card"></i>Profile</h3>
+            <dl class="row profile">
+              <dt class="col-sm-3">Name</dt>
+              <dd class="col-sm-9">椎畑 在東 <small>(Arito Shiihata)</small></dd>
+              <dt class="col-sm-3">Age</dt>
+              <dd class="col-sm-9">25 <small>(1994/03/17)</small></dd>
+              <dt class="col-sm-3">Interests</dt>
+              <dd class="col-sm-9">Frontend, VR</dd>
+              <div class="link-icons"><a href="https://twitter.com/r_tewi" target="_blank" rel=" noopener noreferrer"><i
+                    class="fab fa-twitter"></i></a><a href="https://github.com/7ew1r" target="_blank"
+                  rel=" noopener noreferrer"><i class="fab fa-github"></i></a><a href="http://tewir.hatenablog.com/"
+                  target="_blank" rel=" noopener noreferrer"><i class="fas fa-link"></i></a></div>
+            </dl>
+          </div>
+        </div>
+        <div class="col-lg-7">
+          <div class="biography-right">
+            <p class="profile-detail">
+              大学でロボット工学の研究室に所属し、プログラミングによるCG描画システムの開発を3年間行う。<br>
+              新卒で大手通信会社に就職し、音声系のSEとして営業の提案支援・プロジェクト管理業務に従事するも、
+              実際に手を動かしサービス開発を行う仕事がしたいと思い、キャリアチェンジを決意。<br>
+              現在は独学にてプログラミング学習を行いながら転職活動を行っている。
+            </p>
+            <h3 class="section-sub-title"><i class="fas fa-university"></i>Education</h3>
+            <p>2018/04 : 名城大学大学院 理工学研究科 電気電子工学専攻 卒業</p>
+          </div>
+        </div>
+      </div>
     </div>
-  </div>
+  </div><!-- Biography -->
 
-  <!-- Profile -->
+  <!-- Project -->
   <div class="wrapper wrapper-dark">
-    <div id="profile" class="container">
-      <h1 class="section-title text-center"><i class="fas fa-user"></i>Profile</h1>
-      <dl class="row">
-        <dt class="col-sm-3 text-center">名前</dt>
-        <dd class="col-sm-9">椎畑　在東（Arito Shiihata）</dd>
-        <dt class="col-sm-3 text-center">年齢</dt>
-        <dd class="col-sm-9">25</dd>
-        <dt class="col-sm-3 text-center">好きな言語</dt>
-        <dd class="col-sm-9">Python, Ruby</dd>
-      </dl>
-      <p>
-        電気電子工学の大学にてロボット工学の研究室に所属し、プログラミングによるCG描画システムの開発を3年間行い、IT業界へ興味を持つ。<br>
-        新卒で大手通信会社に就職し、音声系のSEとして提案支援・プロジェクト管理業務に従事するも、
-        手を動かものづくりを行う仕事にチャレンジしたいと考え、キャリアチェンジを決意。<br>
-        現在は独学にてプログラミング学習を行いながら転職活動を行っている。
-      </p>
-    </div>
-  </div>
-
-  <!-- <hr> -->
-
-  <!-- Works -->
-  <div class="wrapper wrapper-light">
     <div id="works" class="container">
-      <h1 class="section-title text-center"><i class="fas fa-wrench"></i>Works</h1>
+      <h1 class="section-title text-center"><i class="fas fa-wrench"></i>Project</h1>
       <p>今まで携わった活動・制作物をまとめました。</p>
 
       <!-- row1 -->
       <div class="row">
-        <!-- ポートフォリオ -->
+        <!-- Protfolio -->
         <div class="col-lg-4" data-toggle="collapse">
           <div class="work" data-toggle="modal" data-target="#portfolio">
             <div class="work-img">
               <img src="img/portfolio.jpg" alt="portfolio">
             </div>
-            <h3>ポートフォリオ</h3>
+            <h3>ポートフォリオサイト</h3>
             <p>自分自身のポートフォリオです</p>
           </div>
 
-          <!-- モーダルダイアログ -->
+          <!-- Protfolio-modal -->
           <div class="modal fade" id="portfolio" tabindex="-1" role="dialog" aria-labelledby="modal" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
               <div class="modal-content">
@@ -98,9 +106,11 @@
                       <img src="img/portfolio.jpg" alt="portfolio">
                     </div>
                     <dt class="col-lg-3 align-self-center">URL</dt>
-                    <dd class="col-lg-9">http://....</dd>
+                    <dd class="col-lg-9"><a href="https://github.com/7ew1r/7ew1r.github.io" target="_blank"
+                        rel=" noopener noreferrer">https://github.com/7ew1r/7ew1r.github.io</a></dd>
                     <dt class="col-lg-3 align-self-center">ソースコード</dt>
-                    <dd class="col-lg-9">http://...</dd>
+                    <dd class="col-lg-9"><a href="https://github.com/7ew1r/portfolio" target="_blank"
+                        rel=" noopener noreferrer">https://github.com/7ew1r/portfolio</a></dd>
                     <dt class="col-lg-3 align-self-center">説明</dt>
                     <dd class="col-lg-9">自分自身のポートフォリオサイトです。<br>
                       Bootstrap4のグリッドシステムを利用して作成しました。</dd>
@@ -111,10 +121,10 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div><!-- ポートフォリオ -->
+          </div><!-- Protfolio-modal -->
+        </div><!-- Protfolio -->
 
-        <!-- Vue.js -->
+        <!-- Vue-Task-App -->
         <div class="col-lg-4">
           <div class="work" data-toggle="modal" data-target="#vue-task-app">
             <div class="work-img">
@@ -124,7 +134,7 @@
             <p>Vue.jsを用いたタスクアプリ</p>
           </div>
 
-          <!-- モーダルダイアログ -->
+          <!-- Vue-Task-App-modal -->
           <div class="modal fade" id="vue-task-app" tabindex="-1" role="dialog" aria-labelledby="modal"
             aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">
@@ -150,14 +160,14 @@
                     </dd>
                     <dt class="col-lg-3 align-self-center">説明</dt>
                     <dd class="col-lg-9">
-                      <p>フロントエンド技術の学習のため、Vue.jsを用いたタスクアプリを作成しました。</p>
-                      <p>データはローカルストレージに保存するため、外部に情報を保存しない単一の端末で使用することを想定しています。</p>
-                      <p>ホスティングサービスにはFirebaseを使用しました。</p>
+                      <p>フロントエンド技術の学習のため、Vue.jsを用いたタスクアプリを作成しました。<br>
+                        データはローカルストレージに保存するため、外部に情報を保存しない単一の端末での使用を想定しています。<br>
+                        ホスティングサービスにはFirebaseを使用しました。</p>
                     </dd>
                   </dl>
                 </div>
                 <div class="modal-footer">
-                  <p>使用言語・技術：HTML5+CSS3, Vue.js</p>
+                  <p>使用言語・技術：HTML5+CSS3, Vue.js, Firebase</p>
                 </div>
               </div>
             </div>
@@ -171,7 +181,7 @@
               <img src="img/pcd-viewer.jpg" alt="pcd-viewer">
             </div>
             <h3>PCD Viewer</h3>
-            <p>PCD（Point Cloud Date）ファイルビューワー</p>
+            <p>PCD（Point Cloud Data）ファイルビューワー</p>
           </div>
         </div>
 
@@ -197,24 +207,21 @@
                                     _blank" rel="noopener noreferrer">https://github.com/7ew1r/pcd-viewer</a></dd>
                   <dt class="col-lg-3 align-self-center">説明</dt>
                   <dd class="col-lg-9">
-                    <p>PCDファイル（3次元点群データ）を表示するツールです。</p>
-                    <p>ファイルを画面にD&Dすることで読み込み、点群データの閲覧を行う事が出来ます。</p>
-                    <p>大学での研究活動にて作成・使用していたものです。</p>
+                    <p>PCDファイル（3次元点群データ）を表示するGUIツールです。<br>
+                      ファイルをウィンドウにD&Dすることで読み込み、点群データの閲覧を行う事が出来ます。<br>
+                      大学での研究活動にて作成・使用していたものです。</p>
                   </dd>
                 </dl>
               </div>
               <div class="modal-footer">
-                <p>使用言語・技術：C++, GLFW, Point Cloud Library</p>
+                <p>使用言語・技術：C++, glfw, Point Cloud Library</p>
               </div>
             </div>
           </div>
         </div>
       </div><!-- PCD Viewer -->
-
     </div>
   </div>
-
-  <!-- <hr> -->
 
   <!-- Contact -->
   <div class="wrapper">
@@ -223,8 +230,6 @@
       <div class="mail-address text-center">
         <p>ar.shiihata@gmail.com</p>
       </div>
-      <p class="sns-icons"><a href="https://github.com/7ew1r" target="_blank" rel=" noopener noreferrer"><i
-            class="fab fa-github"></i></a></p>
     </div>
   </div>
 
