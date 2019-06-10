@@ -1,0 +1,3 @@
+[submodule "portfolio-vue"]
+	path = portfolio-vue
+	url = https://github.com/7ew1r/portfolio-vue.git
